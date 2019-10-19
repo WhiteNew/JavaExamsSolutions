@@ -1,0 +1,17 @@
+	public static void main(String[] args) throws IloException, IOException {
+		
+	      Drone s=new Drone(1 , 1, 1, "aaa");
+	      Drone d=new Drone(2, 3, 2, "AAA");
+	      Target aa=new Target(0, 0, "cc");
+	      
+		 System.out.println(aa instanceof Drone);
+	//	 System.out.println(Drone.class.isInstance(d));
+		 double x = 100, y = 100;
+			double comrange = 30.0; // R_u
+			Double[] h = { 10.0, 25.0, 45.0 };
+			int pos = 5;
+			String inputFile = "C:\\Users\\mrbai\\Desktop\\internship\\data\\targets\\n_5.txt";
+			Topo topo = new Topo(x, y, comrange, h, pos, inputFile);
+		    System.out.println(topo.T);
+		 
+	}
